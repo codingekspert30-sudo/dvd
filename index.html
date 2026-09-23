@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>RationalBlick.de</title>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">
+            <img src="assets/logo.png" alt="RationalBlick.de">
+        </a>
+    
+        <div class="menu" id="menu">
+            <a href="downloads.html">Downloads ⬇️</a>
+            <a href="haeufige-fragen.html">Häufige Fragen ❓</a>
+            <a href="das-ziel.html">Das Ziel 🎯</a>
+        </div>
+    
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+    </nav>
+    
+    
+    <script>
+    function toggleMenu() {
+        document.getElementById("menu").classList.toggle("active");
+    }
+    </script>
+    
+
+<video autoplay muted loop playsinline id="bg">
+    <source src="assets/videeo.mp4" type="video/mp4">
+</video>
+
+</body>
+</html>

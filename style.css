@@ -1,0 +1,200 @@
+html,body{
+    margin:0;
+    height:100%;
+    overflow:hidden;
+    background:#000;
+    font-family:Arial,sans-serif
+}
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    height:70px;
+    background:#000;
+    color:#fff;
+    display:grid;
+    grid-template-columns:1fr auto 1fr;
+    align-items:center;
+    padding:0 30px;
+    box-sizing:border-box;
+    z-index:2
+}
+
+.image-downloads {
+    width: min(90%, 700px);
+    margin: 0 auto 60px;
+}
+
+.image-download {
+    text-align: center;
+    padding: 25px 0;
+}
+
+.image-download img {
+    width: min(90%, 500px);
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 8px;
+}
+
+.image-download a {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 10px 22px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.image-download a:hover {
+    background: #ff0000;
+}
+
+.download-line {
+    width: 70%;
+    height: 1px;
+    background: #be1e1e;
+    margin: 15px auto;
+}
+
+
+.pdf-book {
+    text-align: center;
+    width: 100%;
+}
+
+.pdf-book img {
+    width: min(70%, 300px);
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+
+.downloads h1 {
+    text-align: center;
+    width: 100%;
+    font-size: clamp(20px, 4vw, 36px);
+    margin: 20px auto;
+}
+
+
+.pdf-book a {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.pdf-book a:hover {
+    background: #333;
+}
+
+.logo{
+    color:white;
+    text-decoration:none;
+    font-weight:700;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+.logo .blick{
+    color:red
+}
+
+.menu{
+    display:flex;
+    gap:40px;
+    justify-self:center
+}
+
+.menu a{
+    color:#fff;
+    text-decoration:none
+}
+
+#bg{
+    width:100%;
+    height:100%;
+    object-fit:contain
+}
+
+.downloads{
+    margin-top:70px;
+    color:#000;
+    background:#fff;
+    padding:30px;
+    overflow:auto;
+    height:calc(100vh - 70px);
+    box-sizing:border-box;
+}
+
+.goal-image {
+    max-width: 500px;
+    margin: 0 auto 35px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.goal-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Hamburger button - hidden on desktop */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Phone size */
+@media (max-width: 768px) {
+
+    nav {
+        grid-template-columns: 1fr auto;
+        padding: 0 20px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background: #000;
+        flex-direction: column;
+        gap: 0;
+        text-align: center;
+    }
+   
+    
+    .menu.active {
+        display: flex;
+    }
+
+    .menu a {
+        padding: 20px;
+        border-top: 1px solid #333;
+    }
+}
+
+

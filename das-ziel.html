@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Das Ziel - RationalBlick.de</title>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="RationalBlick.de">
+    </a>
+
+    <div class="menu" id="menu">
+        <a href="downloads.html">Downloads ⬇️</a>
+        <a href="haeufige-fragen.html">Häufige Fragen ❓</a>
+        <a href="das-ziel.html">Das Ziel 🎯</a>
+    </div>
+
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+</nav>
+
+<main class="downloads">
+
+    <h1>Das Ziel</h1>
+
+    <div class="goal-text">
+        <p>
+            Unser Ziel ist es, Dawah-Broschüren in möglichst vielen Moscheen
+            in ganz Deutschland zu verteilen.
+        </p>
+
+        <p>
+            Die Broschüren sollen leicht verständlich sein und zahlreiche
+            Argumente und Hinweise für die Existenz Gottes enthalten –
+            aus Wissenschaft, Philosophie, der Natur und unserem Alltag.
+        </p>
+
+        <p>
+            Wir möchten Menschen dazu einladen, selbst nachzudenken,
+            Fragen zu stellen und sich mit dem Islam auseinanderzusetzen.
+        </p>
+    </div>
+
+    <div class="goal-image">
+        <img src="assets/Ziel.png" alt="Das Ziel">
+    </div>
+
+   
+
+</main>
+
+<script>
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

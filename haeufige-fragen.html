@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Häufige Fragen - RationalBlick.de</title>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="RationalBlick.de">
+    </a>
+
+    <div class="menu" id="menu">
+        <a href="downloads.html">Downloads ⬇️</a>
+        <a href="haeufige-fragen.html">Häufige Fragen ❓</a>
+        <a href="das-ziel.html">Das Ziel 🎯</a>
+    </div>
+
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+</nav>
+
+<main class="downloads">
+
+    <h1>Häufige Fragen</h1>
+
+    <h2>Was ist RationalBlick?</h2>
+    <p>Hier kannst du deine Antwort einfügen.</p>
+
+    <h2>Was finde ich auf dieser Website?</h2>
+    <p>Hier kannst du deine Antwort einfügen.</p>
+
+    <h2>Wo finde ich die Downloads?</h2>
+    <p>Alle verfügbaren Downloads findest du auf der Download-Seite.</p>
+
+</main>
+
+<script>
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
